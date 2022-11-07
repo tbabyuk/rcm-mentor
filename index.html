@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>RCM Mentor - Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to RCM Mentor</h1>
+            <h3>The place to practice for your upcoming RCM Examinations!</h3>
+            <p>Choose the RCM piano levels you are preparing for from the drop-down menu, then, press the spacebar to get a random technical requirement challenge</p>
+        </header>
+        <main>
+            <div class="left-side">
+                <div class="left-side-top">Select Your Level</div>
+                <select id="level-selector">
+                    <option value="prepA">Preparatory A</option>
+                    <option value="prepB">Preparatory B</option>
+                    <option value="lvl1">Level 1</option>
+                </select>
+            </div>
+            <div class="right-side">
+                <div class="right-side-top">Your Random Challenge</div>
+                <div id="random-challenge">Here it is</div>
+            </div>
+        </main>
+        <footer>
+            &copy; Da Capo Academy of Music Inc., 2022
+        </footer>
+    </div>
+</body>
+</html>
