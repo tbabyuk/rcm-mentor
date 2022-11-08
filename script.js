@@ -1,5 +1,6 @@
 const levelSelector = document.querySelector("#level-selector");
 const randomChallenge = document.querySelector("#random-challenge");
+const nextChallengeBtn = document.querySelector("#next-challenge-btn");
 
 
 const LEVELS = {
@@ -11,11 +12,26 @@ const LEVELS = {
 
 // levelSelector.addEventListener("change", showChallenge);
 
+levelSelector.addEventListener("focus", () => {
+    nextChallengeBtn.style.border = "none";
+})
+
+levelSelector.addEventListener("change", () => {
+    nextChallengeBtn.style.border = "2px solid red";
+    nextChallengeBtn.focus();
+})
+
+
 document.addEventListener("keyup", (e) => {
-    if(e.code == "Space") {
+    if(document.activeElement === nextChallengeBtn) {
         showChallenge()
+    } else {
+        alert("please select level")
     }
 })
+
+
+nextChallengeBtn.addEventListener("focus", showChallenge)
 
 
 var randomNumber;

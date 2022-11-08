@@ -11,12 +11,14 @@
     <div class="container">
         <header>
             <h1>Welcome to RCM Mentor</h1>
-            <h3>The place to practice for your upcoming RCM Examinations!</h3>
-            <p>Choose the RCM piano levels you are preparing for from the drop-down menu, then, press the spacebar to get a random technical requirement challenge</p>
+            <h3>Choose your level to get random technical practice challenges!</h3>
+            <!-- <p>Choose the RCM piano levels you are preparing for from the drop-down menu, then, press the spacebar to get a random technical requirement challenge</p> -->
         </header>
         <main>
             <div class="left-side">
-                <div class="left-side-top">Select Your Level</div>
+                <div class="left-side-top">
+                    <h3>Select Your Level</h3>
+                </div>
                 <select id="level-selector">
                     <option value="prepA">Preparatory A</option>
                     <option value="prepB">Preparatory B</option>
@@ -24,12 +26,20 @@
                 </select>
             </div>
             <div class="right-side">
-                <div class="right-side-top">Your Random Challenge</div>
-                <div id="random-challenge">Here it is</div>
+                <div class="right-side-top">
+                    <h3>Your Random Challenge</h3>
+                </div>
+                <div id="random-challenge">random challenge</div>
+                <div class="button-container">
+                    <button id="next-challenge-btn">Next Challenge</button>
+                </div>
             </div>
         </main>
         <footer>
-            &copy; Da Capo Academy of Music Inc., 2022
+            <div class="footer-content">
+                &copy; Da Capo Academy of Music Inc., 2022
+            </div>
+
         </footer>
     </div>
 </body>
