@@ -1,14 +1,17 @@
 
 import { LEVELS } from "./levels.js";
 
+
 // DOM ELEMENTS
 
-const levelSelector = document.querySelector(".level-selector");
+const levelSelector = document.querySelector("#level-selector");
 const randomChallenge = document.querySelector("#random-challenge");
 const nextChallengeBtn = document.querySelector("#next-challenge-btn");
 const selectedLevel = document.querySelector("#selected-level");
 const message = document.querySelector("#message");
 const totalChallenges = document.querySelector("#total-challenges");
+const currentYear = document.querySelector("#year");
+
 
 
 // EVENT LISTENERS
@@ -21,7 +24,6 @@ levelSelector.addEventListener("change", () => {
     message.innerText = "press button or 'space' key for new challenge";
     showTotalChallenges(levelSelector.value);
 })
-
 
 nextChallengeBtn.addEventListener("click", generateChallenge)
 
@@ -36,8 +38,6 @@ nextChallengeBtn.addEventListener("blur", () => {
 })
 
 
-var randomNumber;
-
 
 // FUNCTIONS
 
@@ -50,6 +50,19 @@ function generateChallenge() {
     let randomNumber = Math.floor(Math.random() * LEVELS[currentLevel].length);
     randomChallenge.innerText = LEVELS[currentLevel][randomNumber];
 }
+
+
+// OTHER
+
+const lang = navigator.language;
+
+const today = new Date();
+const year = today.toLocaleString(lang, {
+    year: "numeric"
+})
+currentYear.innerText = year;
+
+
 
 
 
