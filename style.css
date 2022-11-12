@@ -67,8 +67,17 @@ main {
     cursor: pointer;
 }
 
-#left-side-top, #right-side-top, #button-container {
+#left-side-top {
     height: 25%;
+    display: grid;
+    place-items: center;
+}
+
+#right-side-top {
+    text-align: center;
+}
+
+#button-container {
     display: grid;
     place-items: center;
 }
