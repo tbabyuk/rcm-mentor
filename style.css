@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 * {
     margin: 0;
@@ -6,11 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --title-font: 'Playfair Display', serif;
+  }
+
 body {
     height: 100vh;
     width: 100vw;
 }
-
 
 
 /* HEADER STYLING */
@@ -21,23 +24,27 @@ header {
     color: #fff;
 }
 
+.title {
+    font-family: var(--title-font);
+}
+
 
 /* MAIN SECTION STYLING */
+
+main {
+    height: 40%;
+}
 
 #left-side {
     text-align: center;
     border-right: 2px solid black;
-    background-color: rgb(213, 211, 211);
+    background-color: #E8E8E8;
 }
 
 #level-selector {
     width: 80%;
     margin: auto;
     cursor: pointer;
-}
-
-#right-side-top {
-    text-align: center;
 }
 
 #button-container {
@@ -47,12 +54,6 @@ header {
 
 #button-container button:hover {
     opacity: 85%;
-}
-
-#right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 #random-challenge {
@@ -70,7 +71,7 @@ footer {
 }
 
 #footer-content {
-    background-color: black;
+    background-color: #333;
     color: white;
     width: 100%;
     padding: 15px;
@@ -84,7 +85,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     header img {
-        height: 60%;
+        height: 70%;
     }
 }
 

@@ -19,7 +19,7 @@ levelSelector.addEventListener("change", () => {
     nextChallengeBtn.className = "btn btn-primary active";
     nextChallengeBtn.focus();
     selectedLevel.innerText = levelSelector.value;
-    randomChallenge.innerText = "press button"
+    randomChallenge.innerText = "press button or 'space'"
     showTotalChallenges(levelSelector.value);
 })
 

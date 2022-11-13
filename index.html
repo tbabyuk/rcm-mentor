@@ -11,16 +11,17 @@
     <link rel="icon" type="image/png" href="./img/dcam-favicon.png">
 </head>
 <body>
-    <div class="container d-flex flex-column justify-content-between" style="height: 100%" id="container">
+    <div class="container-fluid d-flex flex-column justify-content-between" style="height: 100%" id="container">
 
         <!-- HEADER -->
         <header class="row">
-                <div id="header-logo-left" class="col col-12 col-md-3 d-flex justify-content-center align-items-center py-4"><img class="img-responsive" src="./img/dcam-white1.png"></div>
+                <div id="header-logo-left" class="col col-12 col-md-3 d-flex justify-content-center align-items-center py-3"><img class="img-responsive" src="./img/dcam-white1.png"></div>
                 <div class="col col-12 col-md-6 d-flex flex-column justify-content-center text-center border-top py-4">
-                    <h1 class="display-5">Welcome to RCM Mentor</h1>
-                    <p class="lead">Choose your level to get random technical practice challenges!</p>
+                    <span class="p lead">Welcome to the: </span>
+                    <span class="title h1">RCM EXAM MENTOR</span>
+                    <span class="p lead fst-italic px-5">Choose your level to get random technical practice challenges!</span>
                 </div>
-                <div id="header-logo-right" class="col col-12 col-md-3 d-flex justify-content-center align-items-center border-top py-4"><img src="./img/rcm1.png"></div>
+                <div id="header-logo-right" class="col col-12 col-md-3 d-flex justify-content-center align-items-center border-top py-3"><img src="./img/rcm1.png"></div>
         </header>
 
 
@@ -47,11 +48,11 @@
                 </select>
                 <small class="text-success d-inline-block mt-2" id="total-challenges"></small>
             </div>
-            <div class="col col-12 col-md-8 col-lg-9 py-3 py-md-0 mt-5 mt-md-0" id="right-side">
+            <div class="col col-12 col-md-8 col-lg-9 py-3 py-md-0 mt-5 mt-md-0 d-flex flex-column justify-content-between" id="right-side">
                 <div id="right-side-top">
-                    <p class="h4 fw-normal">Random challenge for: <span class="fst-italic fw-light" id="selected-level"></span></p>
+                    <p class="h4 fw-normal text-center">Random challenge for: <span class="fst-italic fw-light" id="selected-level"></span></p>
                 </div>
-                <div id="random-challenge" class="py-4">select a level</div>
+                <div id="random-challenge" class="py-4 text-center">select a level</div>
                 <div id="button-container">
                     <button type="button" id="next-challenge-btn" class="btn btn-primary disabled mt-4 mt-md-0">Next Challenge</button>
                 </div>
@@ -60,7 +61,7 @@
 
 
         <!-- FOOTER -->
-        <footer class="row mt-5 mt-md-0">
+        <footer class="row mt-5 mt-md-0 d-none d-md-block">
             <div class="col" id="footer-content">
                 <small>&copy; <span id="year"></span> Da Capo Academy of Music Inc.</small> 
             </div>
